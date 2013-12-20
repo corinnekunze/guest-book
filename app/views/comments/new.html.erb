@@ -1,0 +1,10 @@
+<div class="center hero-unit">
+	<h1>Welcome to the Guest Book</h1>	
+	<h2>Make sure to write something!</h2>
+
+	<%= form_for @comment do |f| %>
+		<%= f.text_field :messagetext %> <br/>
+		<%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+	<% end %>
+
+</div>
