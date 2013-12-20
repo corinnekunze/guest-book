@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: guest-book-development
+  pool: 5
+  username: corinnekunze
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: guest-book-test
+  pool: 5
+  username: corinnekunze
+  password:
