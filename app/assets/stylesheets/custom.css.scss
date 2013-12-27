@@ -25,3 +25,10 @@ textarea {
 .center h1 {
   margin-bottom: 10px;
 }
+.row-fluid [class*="span"] {
+	margin:0px;
+}
+
+.comment-message {
+	height:100px;
+}

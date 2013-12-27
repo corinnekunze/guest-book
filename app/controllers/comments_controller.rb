@@ -1,6 +1,7 @@
 class CommentsController < ApplicationController
 	def new
 		@comment = Comment.new
+		@comments = Comment.find(:all)
 	end
 
 	def create
