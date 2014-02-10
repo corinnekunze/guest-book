@@ -3,7 +3,8 @@
 	<h2>Make sure to write something!</h2>
 
 	<%= form_for @comment do |f| %>
-		<%= f.text_field :messagetext %> <br/>
+		<%= render 'shared/error_messages' %>
+		<%= f.text_field :message %> <br/>
 		<%= f.submit "Submit", class: "btn btn-large btn-primary" %>
 	<% end %>
 </div>
@@ -11,7 +12,7 @@
 	<div class="row-fluid center">
 		<% if !@comments.blank? %>
 			<% for item in @comments %>
-					<div class="span4 comment-message"><h2><%= item.messagetext %></h2></div>
+					<div class="span4 comment-message"><h2><%= item.message %></h2></div>
 			<% end %>
 		<% else %>
 	</div>

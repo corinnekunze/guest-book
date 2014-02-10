@@ -32,3 +32,15 @@ textarea {
 .comment-message {
 	height:100px;
 }
+
+#error_explanation ul {
+ 	margin: 0 0 5px;
+	li {
+    color:red;
+		list-style-type: none;
+	}
+}
+
+.field_with_errors input {
+  border:1px solid rgb(216, 92, 92);
+}
